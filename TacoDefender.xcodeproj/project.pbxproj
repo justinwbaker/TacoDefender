@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E2AABF420D862D4006A0306 /* TacoTruck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2AABF320D862D4006A0306 /* TacoTruck.swift */; };
 		5E43111520D33F3B009E2FB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E43111420D33F3B009E2FB4 /* AppDelegate.swift */; };
 		5E43111720D33F3B009E2FB4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5E43111620D33F3B009E2FB4 /* GameScene.sks */; };
 		5E43111920D33F3B009E2FB4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5E43111820D33F3B009E2FB4 /* Actions.sks */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E2AABF320D862D4006A0306 /* TacoTruck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacoTruck.swift; sourceTree = "<group>"; };
 		5E43111120D33F3B009E2FB4 /* TacoDefender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TacoDefender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E43111420D33F3B009E2FB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E43111620D33F3B009E2FB4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E2AABF220D862A7006A0306 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				5E2AABF320D862D4006A0306 /* TacoTruck.swift */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
 		5E43110820D33F3A009E2FB4 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +117,7 @@
 				5E43111620D33F3B009E2FB4 /* GameScene.sks */,
 				5E43111820D33F3B009E2FB4 /* Actions.sks */,
 				5E43111A20D33F3B009E2FB4 /* GameScene.swift */,
+				5E2AABF220D862A7006A0306 /* Characters */,
 				5E43111C20D33F3B009E2FB4 /* GameViewController.swift */,
 				5E43111E20D33F3B009E2FB4 /* Main.storyboard */,
 				5E43112120D33F3B009E2FB4 /* Assets.xcassets */,
@@ -269,6 +280,7 @@
 			files = (
 				5E43111B20D33F3B009E2FB4 /* GameScene.swift in Sources */,
 				5E43111D20D33F3B009E2FB4 /* GameViewController.swift in Sources */,
+				5E2AABF420D862D4006A0306 /* TacoTruck.swift in Sources */,
 				5E43111520D33F3B009E2FB4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
