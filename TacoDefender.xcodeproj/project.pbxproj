@@ -93,6 +93,7 @@
 		5E43110820D33F3A009E2FB4 = {
 			isa = PBXGroup;
 			children = (
+				5EE9C2EF20D86A3E00F689DA /* Paints */,
 				5E43111320D33F3B009E2FB4 /* TacoDefender */,
 				5E43112E20D33F3B009E2FB4 /* TacoDefenderTests */,
 				5E43113920D33F3C009E2FB4 /* TacoDefenderUITests */,
@@ -143,6 +144,13 @@
 				5E43113C20D33F3C009E2FB4 /* Info.plist */,
 			);
 			path = TacoDefenderUITests;
+			sourceTree = "<group>";
+		};
+		5EE9C2EF20D86A3E00F689DA /* Paints */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Paints;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
