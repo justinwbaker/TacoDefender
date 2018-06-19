@@ -24,11 +24,6 @@ class projectile: SKSpriteNode {
     
     init(projectileType type: projectileType, CGFloat direction: CGFloat){
         var texture = SKTexture(imageNamed: "Ant")
-        self.physicsBody = SKPhysicsBody(circleOfRadius: texture.size().width /2)
-        self.physicsBody?.affectedByGravity = false
-        let dx = cos(x: direction)
-        let dy = sin(y: direction)
-        self.physicsBody?.velocity = CGVector(dx: dx, dy: dy)
         
         switch type{
         
@@ -58,6 +53,12 @@ class projectile: SKSpriteNode {
         }
         
         super.init(texture: texture, color: .white, size: texture.size())
+
+        self.physicsBody = SKPhysicsBody(circleOfRadius: (texture.size().width / 2))
+        self.physicsBody?.affectedByGravity = false
+        let dx = cos(direction)
+        let dy = sin(direction)
+        self.physicsBody?.velocity = CGVector(dx: dx, dy: dy)
     }
     
     required init?(coder aDecoder: NSCoder){
