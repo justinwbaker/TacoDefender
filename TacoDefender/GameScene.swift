@@ -12,9 +12,11 @@ import GameplayKit
 class GameScene: SKScene {
 
     var tacoTruck = TacoTruck()
+    var test = Projectile(projectileType: Projectile.projectileType.ketchup, CGFloat: 45.0)
 
     override func didMove(to view: SKView) {
         addChild(tacoTruck)
+        addChild(test)
     }
 
     func touchDown(atPoint pos : CGPoint) {

@@ -9,7 +9,7 @@
 import Foundation
 import SpriteKit
 
-class projectile: SKSpriteNode {
+class Projectile: SKSpriteNode {
     
     enum projectileType{
         case ketchup
@@ -56,8 +56,8 @@ class projectile: SKSpriteNode {
 
         self.physicsBody = SKPhysicsBody(circleOfRadius: (texture.size().width / 2))
         self.physicsBody?.affectedByGravity = false
-        let dx = cos(direction)
-        let dy = sin(direction)
+        let dx = cos(direction) * 100
+        let dy = sin(direction) * 100
         self.physicsBody?.velocity = CGVector(dx: dx, dy: dy)
     }
     
