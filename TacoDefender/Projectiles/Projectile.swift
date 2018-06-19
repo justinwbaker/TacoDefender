@@ -12,7 +12,14 @@ import SpriteKit
 class projectile: SKSpriteNode {
     
     enum projectileType{
-        case ketchup, mustard, mayonaise, guacamole, limeJuice, sourCream, sriracha, chili
+        case ketchup
+        case mustard
+        case mayonaise
+        case guacamole
+        case limeJuice
+        case sourCream
+        case sriracha
+        case chili
     }
     
     init(projectileType type: projectileType, CGFloat direction: CGFloat){
