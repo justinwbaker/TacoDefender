@@ -16,7 +16,7 @@ class TacoTruck: SKSpriteNode {
     }
 
     init() {
-        let texture = SKTexture(imageNamed: "Taco")
+        let texture = SKTexture(imageNamed: "TacoTruck")
         super.init(texture: texture, color: .white, size: texture.size())
 
         name = "TacoTruck"
