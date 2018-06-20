@@ -9,6 +9,20 @@
 import SpriteKit
 import GameplayKit
 
+extension CGPoint {
+    func getDistance(CGPoint point: CGPoint) -> CGFloat{
+        let dx = point.x - self.x
+        let dy = point.y - self.y
+        return sqrt(dx*dx-dy*dy)
+    }
+    
+    func getAngle(CGPoint point: CGPoint) -> CGFloat {
+        let dx = point.x - self.x
+        let dy = point.y - self.y
+        return atan(dy/dx)
+    }
+}
+
 class GameScene: SKScene {
 
     var tacoTruck = TacoTruck()
