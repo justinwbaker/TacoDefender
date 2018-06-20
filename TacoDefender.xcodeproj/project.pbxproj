@@ -18,6 +18,9 @@
 		5E43112520D33F3B009E2FB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E43112320D33F3B009E2FB4 /* LaunchScreen.storyboard */; };
 		5E43113020D33F3B009E2FB4 /* TacoDefenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E43112F20D33F3B009E2FB4 /* TacoDefenderTests.swift */; };
 		5E43113B20D33F3C009E2FB4 /* TacoDefenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E43113A20D33F3C009E2FB4 /* TacoDefenderUITests.swift */; };
+		5EED177620DAF9D400E46637 /* Tower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EED177520DAF9D400E46637 /* Tower.swift */; };
+		5EED177820DAFA4700E46637 /* Goop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EED177720DAFA4700E46637 /* Goop.swift */; };
+		5EED177A20DAFAF900E46637 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EED177920DAFAF900E46637 /* Enemy.swift */; };
 		9FB792A320D9B1DF000EBDD2 /* Projectile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB792A220D9B1DF000EBDD2 /* Projectile.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +59,9 @@
 		5E43113620D33F3C009E2FB4 /* TacoDefenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TacoDefenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E43113A20D33F3C009E2FB4 /* TacoDefenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacoDefenderUITests.swift; sourceTree = "<group>"; };
 		5E43113C20D33F3C009E2FB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EED177520DAF9D400E46637 /* Tower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tower.swift; sourceTree = "<group>"; };
+		5EED177720DAFA4700E46637 /* Goop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goop.swift; sourceTree = "<group>"; };
+		5EED177920DAFAF900E46637 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		9FB792A220D9B1DF000EBDD2 /* Projectile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projectile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				5E2AABF320D862D4006A0306 /* TacoTruck.swift */,
+				5EED177920DAFAF900E46637 /* Enemy.swift */,
 			);
 			path = Characters;
 			sourceTree = "<group>";
@@ -120,7 +127,7 @@
 				5E43111620D33F3B009E2FB4 /* GameScene.sks */,
 				5E43111820D33F3B009E2FB4 /* Actions.sks */,
 				5E43111A20D33F3B009E2FB4 /* GameScene.swift */,
-				5E76C1BE20D9C81000099965 /* Projectile */,
+				5E76C1BE20D9C81000099965 /* Towers */,
 				5E2AABF220D862A7006A0306 /* Characters */,
 				5E43111C20D33F3B009E2FB4 /* GameViewController.swift */,
 				5E43111E20D33F3B009E2FB4 /* Main.storyboard */,
@@ -149,12 +156,14 @@
 			path = TacoDefenderUITests;
 			sourceTree = "<group>";
 		};
-		5E76C1BE20D9C81000099965 /* Projectile */ = {
+		5E76C1BE20D9C81000099965 /* Towers */ = {
 			isa = PBXGroup;
 			children = (
 				9FB792A220D9B1DF000EBDD2 /* Projectile.swift */,
+				5EED177520DAF9D400E46637 /* Tower.swift */,
+				5EED177720DAFA4700E46637 /* Goop.swift */,
 			);
-			path = Projectile;
+			path = Towers;
 			sourceTree = "<group>";
 		};
 		5EE9C2EF20D86A3E00F689DA /* Paints */ = {
@@ -300,8 +309,11 @@
 				9FB792A320D9B1DF000EBDD2 /* Projectile.swift in Sources */,
 				5E43111B20D33F3B009E2FB4 /* GameScene.swift in Sources */,
 				5E43111D20D33F3B009E2FB4 /* GameViewController.swift in Sources */,
+				5EED177620DAF9D400E46637 /* Tower.swift in Sources */,
+				5EED177A20DAFAF900E46637 /* Enemy.swift in Sources */,
 				5E2AABF420D862D4006A0306 /* TacoTruck.swift in Sources */,
 				5E43111520D33F3B009E2FB4 /* AppDelegate.swift in Sources */,
+				5EED177820DAFA4700E46637 /* Goop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
