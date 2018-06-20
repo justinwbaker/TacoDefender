@@ -9,6 +9,20 @@
 import Foundation
 import SpriteKit
 
+extension CGPoint {
+    func getDistance(CGPoint point: CGPoint) -> CGFloat{
+        let dx = point.x - self.x
+        let dy = point.y - self.y
+        return sqrt(dx*dx-dy*dy)
+    }
+
+    func getAngle(CGPoint point: CGPoint) -> CGFloat {
+        let dx = point.x - self.x
+        let dy = point.y - self.y
+        return atan(dy/dx)
+    }
+}
+
 class Tower: SKSpriteNode {
     
     enum towerType {
@@ -22,10 +36,6 @@ class Tower: SKSpriteNode {
         case tartarSauce
     }
 
-    
-    
-    
-    
     var health: CInt
     var maxHealth: CInt
     var range: CInt
@@ -84,7 +94,6 @@ class Tower: SKSpriteNode {
         }
         health = maxHealth
         target = CGPoint(x: 0, y: 0)
-        
         super.init(texture: texture, color: .white, size: texture.size())
     }
 
