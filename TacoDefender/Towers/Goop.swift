@@ -11,9 +11,11 @@ import SpriteKit
 
 class Goop: SKSpriteNode {
 
-    var lifetime: CInt
+    var lifetime: CGFloat
     var radius: CGFloat
     var damage: CInt
+
+    var gameTimer: Timer!
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("use init()")
@@ -21,7 +23,6 @@ class Goop: SKSpriteNode {
 
     init(type: Tower.towerType) {
         var texture = SKTexture(imageNamed: "ketchupGoop")
-
         lifetime = 1
         radius = 5
         damage = 1
@@ -48,6 +49,29 @@ class Goop: SKSpriteNode {
         let size = CGSize(width: radius, height: radius)
 
         super.init(texture: texture, color: .white, size: size)
+        gameTimer = Timer.scheduledTimer(timeInterval: 1/60, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+    }
+
+    @objc func update() {
+        lifetime -= 1/60
+        self.alpha -= 0.1
+        self.size = CGSize(width: self.size.width - 1/60, height: self.size.height - 1/60)
+        if(lifetime <= 0) {
+            destroy()
+        }
+    }
+
+    func destroy() {
+        self.removeFromParent()
+    }
+
+    override func intersects(_ node: SKNode) -> Bool {
+        if(node is Enemy) {
+            let enemy: Enemy = node as! Enemy
+            enemy.takeDamage(damage: damage)
+            return true
+        }
+        return false
     }
 
 }
