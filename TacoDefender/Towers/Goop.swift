@@ -55,7 +55,7 @@ class Goop: SKSpriteNode {
     @objc func update() {
         lifetime -= 1/30
         self.alpha -= 0.1
-        self.size = CGSize(width: self.size.width - 1/30, height: self.size.height - 1/3ß0)
+        self.size = CGSize(width: self.size.width - 1/30, height: self.size.height - 1/30)
         if(lifetime <= 0) {
             destroy()
         }
