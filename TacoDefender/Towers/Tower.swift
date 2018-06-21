@@ -35,6 +35,7 @@ class Tower: SKSpriteNode {
     var target: CGPoint
     var towerColor: SKColor
     var colorBlend: CGFloat
+    var turret: SKSpriteNode
     
 
     required init?(coder aDecoder: NSCoder) {
@@ -51,6 +52,8 @@ class Tower: SKSpriteNode {
                 firerate = 2
                 towerColor = .red
                 colorBlend = 1
+                turret = SKSpriteNode()
+                turret.texture = SKTexture(imageNamed: "ketchup")
 
             
             case.mustard:
@@ -59,6 +62,8 @@ class Tower: SKSpriteNode {
                 firerate = 2
                 towerColor = .yellow
                 colorBlend = 1
+                turret = SKSpriteNode()
+
 
             
             case.limeJuice:
@@ -67,6 +72,8 @@ class Tower: SKSpriteNode {
                 firerate = 4
                 towerColor = .green
                 colorBlend = 0.25
+                turret = SKSpriteNode()
+
 
 
             
@@ -76,6 +83,7 @@ class Tower: SKSpriteNode {
                 firerate = 5
                 towerColor = .white
                 colorBlend = 0.9
+                turret = SKSpriteNode()
 
 
             
@@ -85,6 +93,7 @@ class Tower: SKSpriteNode {
                 firerate = 8
                 towerColor = .red
                 colorBlend = 0.5
+                turret = SKSpriteNode()
 
 
             
@@ -94,6 +103,7 @@ class Tower: SKSpriteNode {
                 firerate = 0 // TODO
                 towerColor = .brown
                 colorBlend = 0.5
+                turret = SKSpriteNode()
 
 
             
@@ -103,6 +113,7 @@ class Tower: SKSpriteNode {
                 firerate = 7
                 towerColor = .green
                 colorBlend = 0.8
+                turret = SKSpriteNode()
 
 
             
@@ -112,16 +123,19 @@ class Tower: SKSpriteNode {
                 firerate = 0 // TODO
                 towerColor = .yellow
                 colorBlend = 0.25
+                turret = SKSpriteNode()
 
 
         }
         health = maxHealth
         target = CGPoint(x: 0, y: 0)
         super.init(texture: texture, color: .white, size: (texture.size()/6))
+        addChild(turret)
         self.colorBlendFactor = colorBlend
 
         self.position = position
-        self.zRotation = self.position.getAngle(CGPoint: target)
+        turret.zRotation = self.position.getAngle(CGPoint: target)
+
     }
     
     // SKAction bit for its update
