@@ -23,6 +23,8 @@ extension CGPoint {
     }
 }
 
+
+
 class GameScene: SKScene {
 
     var tacoTruck = TacoTruck()
