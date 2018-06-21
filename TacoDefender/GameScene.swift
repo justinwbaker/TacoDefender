@@ -19,7 +19,7 @@ extension CGPoint {
     func getAngle(CGPoint point: CGPoint) -> CGFloat {
         let dx = point.x - self.x
         let dy = point.y - self.y
-        return atan(dx/dy)
+        return atan(dx/dy) + CGFloat.pi
     }
 }
 
