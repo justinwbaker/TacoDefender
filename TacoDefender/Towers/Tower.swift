@@ -163,7 +163,7 @@ class Tower: SKSpriteNode {
         //fire projectile at target location as a vector
         
         if (self.position.getDistance(CGPoint: target)) <= range{
-            var projectile = Projectile(type, )
+            var projectile = Projectile(type: type, direction: self.position.getAngle(CGPoint: target))
         }
     }
     
