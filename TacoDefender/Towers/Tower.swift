@@ -139,6 +139,8 @@ class Tower: SKSpriteNode {
         super.init(texture: texture, color: .white, size: (texture.size()/6))
         gameTimer = Timer.scheduledTimer(timeInterval: 1/30, target: self, selector: #selector(update), userInfo: nil, repeats: true)
         shootTimer = Timer.scheduledTimer(timeInterval: firerate, target: self, selector: #selector(shoot), userInfo: nil, repeats: true)
+        shootTimer.invalidate()
+        gameTimer.invalidate()
         self.colorBlendFactor = colorBlend
 
         self.position = position
