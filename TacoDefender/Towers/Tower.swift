@@ -52,8 +52,8 @@ class Tower: SKSpriteNode {
                 firerate = 2
                 towerColor = .red
                 colorBlend = 1
-                turret = SKSpriteNode()
-                turret.texture = SKTexture(imageNamed: "ketchup")
+                turret = SKSpriteNode(color: towerColor, size: (texture.size()/6))
+                turret.texture = SKTexture(imageNamed: "bottle_grey_00")
 
             
             case.mustard:
@@ -135,6 +135,9 @@ class Tower: SKSpriteNode {
         self.position = position
         turret.zRotation = self.position.getAngle(CGPoint: target)
         turret.zPosition = 5
+        turret.position = self.position
+        turret.colorBlendFactor = 1
+        
         addChild(turret)
 
 
