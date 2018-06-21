@@ -81,6 +81,7 @@ class Tower: SKSpriteNode {
         health = maxHealth
         target = CGPoint(x: 0, y: 0)
         super.init(texture: texture, color: .white, size: texture.size())
+        self.position = position
         self.zRotation = self.position.getAngle(CGPoint: target)
     }
 
