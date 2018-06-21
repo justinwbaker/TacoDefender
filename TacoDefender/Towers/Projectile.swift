@@ -11,7 +11,7 @@ import SpriteKit
 
 class Projectile: SKSpriteNode {
     
-    init(type: Tower.towerType, direction: CGFloat){
+    init(type: Tower.towerType, direction: CGFloat, position: CGPosition){
         var texture = SKTexture(imageNamed: "Ant")
         
         switch type{
@@ -45,6 +45,7 @@ class Projectile: SKSpriteNode {
         }
         
         super.init(texture: texture, color: .white, size: texture.size())
+        self.position = position
 
         self.physicsBody = SKPhysicsBody(circleOfRadius: (texture.size().width / 2))
         self.physicsBody?.affectedByGravity = false
