@@ -2,8 +2,8 @@
 //  Goop.swift
 //  TacoDefender
 //
-//  Created by justin baker on 2018-06-20.
-//  Copyright © 2018 justin baker. All rights reserved.
+//  Created by Justin Baker, Cody Cormeir, and Ben Hancock on 2018-06-20.
+//  Copyright © 2018 Justin Baker, Cody Cormeir, and Ben Hancock . All rights reserved.
 //
 
 import Foundation

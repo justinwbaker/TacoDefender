@@ -2,8 +2,8 @@
 //  Tower.swift
 //  TacoDefender
 //
-//  Created by justin baker on 2018-06-20.
-//  Copyright © 2018 justin baker. All rights reserved.
+//  Created by Justin Baker, Cody Cormeir, and Ben Hancock on 2018-06-20.
+//  Copyright © 2018 Justin Baker, Cody Cormeir, and Ben Hancock . All rights reserved.
 //
 
 import Foundation
@@ -14,6 +14,9 @@ func / (left: CGSize, right: CGFloat) -> CGSize{
     return CGSize(width: left.width / right, height: left.height / right)
 }
 
+func - (left: CGSize, right: CGSize) -> CGSize{
+    return CGSize(width: left.width - right.width, height: left.height - right.height)
+}
 class Tower: SKSpriteNode {
     
     enum towerType {
@@ -52,8 +55,9 @@ class Tower: SKSpriteNode {
                 firerate = 2
                 towerColor = .red
                 colorBlend = 1
-                turret = SKSpriteNode(color: towerColor, size: (texture.size()/6))
+                turret = SKSpriteNode()
                 turret.texture = SKTexture(imageNamed: "bottle_grey_00")
+                turret.color = towerColor
 
             
             case.mustard:
@@ -136,6 +140,7 @@ class Tower: SKSpriteNode {
         turret.zRotation = self.position.getAngle(CGPoint: target)
         turret.zPosition = 5
         turret.colorBlendFactor = 1
+        turret.size = (self.size) - (self.size/10)
         
         addChild(turret)
 
