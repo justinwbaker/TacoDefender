@@ -11,13 +11,43 @@ import SpriteKit
 
 class Goop: SKSpriteNode {
 
+    var lifetime: CInt
+    var radius: CGFloat
+    var damage: CInt
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("use init()")
     }
 
-    init() {
-        let texture = SKTexture(imageNamed: "ketchupGoop")
-        super.init(texture: texture, color: .white, size: texture.size())
+    init(type: Tower.towerType) {
+        var texture = SKTexture(imageNamed: "ketchupGoop")
+
+        lifetime = 1
+        radius = 5
+        damage = 1
+
+        switch type {
+            case .ketchup:
+                texture = SKTexture(imageNamed: "ketchupGoop")
+            case .mustard:
+                texture = SKTexture(imageNamed: "mustardGoop")
+            case .guacamole:
+                texture = SKTexture(imageNamed: "guacamoleGoop")
+            case .limeJuice:
+                texture = SKTexture(imageNamed: "limeJuiceGoop")
+            case .sourCream:
+                texture = SKTexture(imageNamed: "sourCreamGoop")
+            case .sriracha:
+                texture = SKTexture(imageNamed: "srirachaGoop")
+            case .chili:
+                texture = SKTexture(imageNamed: "chiliGoop")
+            case .tartarSauce:
+                texture = SKTexture(imageNamed: "tartarSauceGoop")
+        }
+
+        let size = CGSize(width: radius, height: radius)
+
+        super.init(texture: texture, color: .white, size: size)
     }
 
 }
