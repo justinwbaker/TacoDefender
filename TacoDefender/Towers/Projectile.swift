@@ -11,18 +11,7 @@ import SpriteKit
 
 class Projectile: SKSpriteNode {
     
-    enum projectileType{
-        case ketchup
-        case mustard
-        case mayonaise
-        case guacamole
-        case limeJuice
-        case sourCream
-        case sriracha
-        case chili
-    }
-    
-    init(projectileType type: projectileType, CGFloat direction: CGFloat){
+    init(type: Tower.towerType, CGFloat direction: CGFloat){
         var texture = SKTexture(imageNamed: "Ant")
         
         switch type{
@@ -33,8 +22,8 @@ class Projectile: SKSpriteNode {
         case.mustard:
             texture = SKTexture(imageNamed: "mustard")
             
-        case.mayonaise:
-            texture = SKTexture(imageNamed: "mayonaise")
+        /*case.mayonaise:
+            texture = SKTexture(imageNamed: "mayonaise")*/
             
         case.guacamole:
             texture = SKTexture(imageNamed: "guacamole")
@@ -50,6 +39,9 @@ class Projectile: SKSpriteNode {
             
         case.chili:
             texture = SKTexture(imageNamed: "chili")
+            
+        case .tartarSauce:
+            texture = SKTexture(imageNamed: "tartarSauce")
         }
         
         super.init(texture: texture, color: .white, size: texture.size())

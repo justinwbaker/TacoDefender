@@ -49,13 +49,13 @@ class Goop: SKSpriteNode {
         let size = CGSize(width: radius, height: radius)
 
         super.init(texture: texture, color: .white, size: size)
-        gameTimer = Timer.scheduledTimer(timeInterval: 1/60, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+        gameTimer = Timer.scheduledTimer(timeInterval: 1/30, target: self, selector: #selector(update), userInfo: nil, repeats: true)
     }
 
     @objc func update() {
-        lifetime -= 1/60
+        lifetime -= 1/30
         self.alpha -= 0.1
-        self.size = CGSize(width: self.size.width - 1/60, height: self.size.height - 1/60)
+        self.size = CGSize(width: self.size.width - 1/30, height: self.size.height - 1/30)
         if(lifetime <= 0) {
             destroy()
         }
