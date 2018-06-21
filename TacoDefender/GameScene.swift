@@ -28,7 +28,7 @@ extension CGPoint {
 class GameScene: SKScene {
 
     var tacoTruck = TacoTruck()
-    var test = Tower(towerType: Tower.towerType.ketchup, CGPoint: CGPoint(x: 70, y: 70))
+    var test = Tower(towerType: Tower.towerType.ketchup, CGPoint: CGPoint(x: 150, y: 150))
 
     override func didMove(to view: SKView) {
         addChild(tacoTruck)
