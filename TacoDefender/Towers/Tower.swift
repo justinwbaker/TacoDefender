@@ -161,7 +161,7 @@ class Tower: SKSpriteNode {
     // findTarget is first part
     // rotate is second part
     
-    @ objc func shoot(){
+    @objc func shoot(){
         //fire projectile at target location as a vector
         
         if (self.position.getDistance(CGPoint: target)) <= range*100{
