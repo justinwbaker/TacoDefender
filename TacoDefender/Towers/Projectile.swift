@@ -11,7 +11,7 @@ import SpriteKit
 
 class Projectile: SKSpriteNode {
     
-    init(type: Tower.towerType, direction: CGFloat, position: CGPosition){
+    init(type: Tower.towerType, direction: CGFloat, position: CGPoint){
         var texture = SKTexture(imageNamed: "Ant")
         
         switch type{
