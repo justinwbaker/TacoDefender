@@ -32,13 +32,16 @@ class Tower: SKSpriteNode {
 
     var health: CInt
     var maxHealth: CInt
-    var range: CInt
-    var firerate: CInt
+    var range: CGFloat
+    var firerate: CDouble
     var type: towerType
     var target: CGPoint
     var towerColor: SKColor
     var colorBlend: CGFloat
     var turret: SKSpriteNode
+    var gameTimer: Timer!
+    var shootTimer: Timer!
+
     
 
     required init?(coder aDecoder: NSCoder) {
@@ -134,25 +137,34 @@ class Tower: SKSpriteNode {
         health = maxHealth
         target = CGPoint(x: 150, y: 250)
         super.init(texture: texture, color: .white, size: (texture.size()/6))
+        gameTimer = Timer.scheduledTimer(timeInterval: 1/30, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+        shootTimer = Timer.scheduledTimer(timeInterval: firerate, target: self, selector: #selector(shoot), userInfo: nil, repeats: true)
         self.colorBlendFactor = colorBlend
 
         self.position = position
         turret.zRotation = self.position.getAngle(CGPoint: target)
         turret.zPosition = 5
         turret.colorBlendFactor = 1
-        turret.size = (self.size) - (self.size/10)
+        turret.size = (self.size) - (self.size/8)
         
         addChild(turret)
 
-
+    }
+    
+    @objc func update() {
+        
     }
     
     // SKAction bit for its update
     // findTarget is first part
     // rotate is second part
     
-    func shoot(CGPoint target: CGPoint){
+    @ objc func shoot(){
         //fire projectile at target location as a vector
+        
+        if (self.position.getDistance(CGPoint: target)) <= range{
+            var projectile = Projectile(type, )
+        }
     }
     
     func destroy(){
