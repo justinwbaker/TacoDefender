@@ -12,6 +12,8 @@ import SpriteKit
 class TacoTruck: SKSpriteNode {
 
     var tacos = 5
+    var foodPoints = 100
+
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("Use init()")
@@ -19,7 +21,7 @@ class TacoTruck: SKSpriteNode {
 
     init() {
         let texture = SKTexture(imageNamed: "TacoTruck")
-        let size = CGSize(width: texture.size().width/5, height: texture.size().height/5)
+        let size = CGSize(width: texture.size().width/6, height: texture.size().height/6)
 
         super.init(texture: texture, color: .white, size: size)
 

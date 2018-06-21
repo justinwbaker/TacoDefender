@@ -84,5 +84,30 @@ class Tower: SKSpriteNode {
         self.position = position
         self.zRotation = self.position.getAngle(CGPoint: target)
     }
+    
+    // SKAction bit for its update
+    // findTarget is first part
+    // rotate is second part
+    
+    func shoot(CGPoint target: CGPoint){
+        //fire projectile at target location as a vector
+    }
+    
+    func destroy(){
+        removeFromParent()
+    }
+    
+    func sell(){
+        removeFromParent()
+        //Add foodpoints
+    }
+    
+    func takeDamage(CInt damage: CInt){
+        self.health -= damage
+    }
+    
+    func upgrade(){
+        
+    }
 
 }
