@@ -80,8 +80,7 @@ class Tower: SKSpriteNode {
         }
         health = maxHealth
         target = CGPoint(x: 0, y: 0)
-        super.init(texture: texture, color: .white, size: texture.size())
-        self.color = UIColor.cyan
+        super.init(texture: texture, color: .red, size: texture.size())
         self.colorBlendFactor = 1
 
         self.position = position
