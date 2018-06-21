@@ -130,11 +130,13 @@ class Tower: SKSpriteNode {
         health = maxHealth
         target = CGPoint(x: 0, y: 0)
         super.init(texture: texture, color: .white, size: (texture.size()/6))
-        addChild(turret)
         self.colorBlendFactor = colorBlend
 
         self.position = position
         turret.zRotation = self.position.getAngle(CGPoint: target)
+        turret.zPosition = 5
+        addChild(turret)
+
 
     }
     
