@@ -11,7 +11,7 @@ import SpriteKit
 
 class Projectile: SKSpriteNode {
     
-    init(type: Tower.towerType, CGFloat direction: CGFloat){
+    init(type: Tower.towerType, direction: CGFloat){
         var texture = SKTexture(imageNamed: "Ant")
         
         switch type{
@@ -39,7 +39,7 @@ class Projectile: SKSpriteNode {
             
         case.chili:
             texture = SKTexture(imageNamed: "chili")
-            
+
         case .tartarSauce:
             texture = SKTexture(imageNamed: "tartarSauce")
         }
