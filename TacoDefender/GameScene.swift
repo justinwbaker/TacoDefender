@@ -19,14 +19,14 @@ extension CGPoint {
     func getAngle(CGPoint point: CGPoint) -> CGFloat {
         let dx = point.x - self.x
         let dy = point.y - self.y
-        return atan(dy/dx)
+        return atan(dx/dy)
     }
 }
 
 class GameScene: SKScene {
 
     var tacoTruck = TacoTruck()
-    var test = Projectile(projectileType: Projectile.projectileType.ketchup, CGFloat: 45.0)
+    var test = Tower(towerType: Tower.towerType.ketchup, CGPoint: CGPoint(x: 70, y: 70))
 
     override func didMove(to view: SKView) {
         addChild(tacoTruck)
