@@ -237,7 +237,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = "justin baker";
+				ORGANIZATIONNAME = easterndevelopers.ca;
 				TargetAttributes = {
 					5E43111020D33F3B009E2FB4 = {
 						CreatedOnToolsVersion = 9.4;

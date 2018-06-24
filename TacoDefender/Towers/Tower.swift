@@ -62,7 +62,6 @@ class Tower: SKSpriteNode {
                 turret.texture = SKTexture(imageNamed: "bottle_grey_00")
                 turret.color = towerColor
 
-            
             case.mustard:
                 maxHealth = 7
                 range = 3
@@ -70,8 +69,6 @@ class Tower: SKSpriteNode {
                 towerColor = .yellow
                 colorBlend = 1
                 turret = SKSpriteNode()
-
-
             
             case.limeJuice:
                 maxHealth = 5
@@ -81,8 +78,6 @@ class Tower: SKSpriteNode {
                 colorBlend = 0.25
                 turret = SKSpriteNode()
 
-
-
             
             case.sourCream:
                 maxHealth = 5
@@ -91,8 +86,6 @@ class Tower: SKSpriteNode {
                 towerColor = .white
                 colorBlend = 0.9
                 turret = SKSpriteNode()
-
-
             
             case.sriracha:
                 maxHealth = 10
@@ -101,8 +94,6 @@ class Tower: SKSpriteNode {
                 towerColor = .red
                 colorBlend = 0.5
                 turret = SKSpriteNode()
-
-
             
             case.chili:
                 maxHealth = 0
@@ -111,8 +102,6 @@ class Tower: SKSpriteNode {
                 towerColor = .brown
                 colorBlend = 0.5
                 turret = SKSpriteNode()
-
-
             
             case.guacamole:
                 maxHealth = 2
@@ -121,8 +110,6 @@ class Tower: SKSpriteNode {
                 towerColor = .green
                 colorBlend = 0.8
                 turret = SKSpriteNode()
-
-
             
             case.tartarSauce:
                 maxHealth = 0
@@ -131,14 +118,14 @@ class Tower: SKSpriteNode {
                 towerColor = .yellow
                 colorBlend = 0.25
                 turret = SKSpriteNode()
-
-
         }
+        
         health = maxHealth
         target = CGPoint(x: 150, y: 250)
         super.init(texture: texture, color: .white, size: (texture.size()/6))
-        gameTimer = Timer.scheduledTimer(timeInterval: 1/30, target: self, selector: #selector(update), userInfo: nil, repeats: true)
-        shootTimer = Timer.scheduledTimer(timeInterval: firerate, target: self, selector: #selector(shoot), userInfo: nil, repeats: true)
+        gameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
+        shootTimer = Timer.scheduledTimer(timeInterval: firerate, target: self, selector: #selector(self.shoot), userInfo: nil, repeats: true)
+
         shootTimer.invalidate()
         gameTimer.invalidate()
         self.colorBlendFactor = colorBlend
@@ -155,16 +142,28 @@ class Tower: SKSpriteNode {
     
     @objc func update() {
         
+        for _ in GameScene.enemyList {
+            
+            
+        } // loops through enemies in enemyList and aims at closest
+
+        
     }
     
     // SKAction bit for its update
     // findTarget is first part
     // rotate is second part
     
+    // for enemies within camera view, get distance from and to, and then check if it's the closest target, and if so face that enemy
+    
+    
+    // then check if within range and if so shoot
+    
     @objc func shoot(){
-        //fire projectile at target location as a vector
         
-        if (self.position.getDistance(CGPoint: target)) <= range*100{
+
+        
+        if (self.position.getDistance(CGPoint: target)) <= range*1000{
             let projectile = Projectile(type: type, direction: self.position.getAngle(CGPoint: target), position: self.position)
             self.scene?.addChild(projectile)
         }
