@@ -10,6 +10,8 @@ import Foundation
 import SpriteKit
 
 class Enemy: SKSpriteNode{
+    
+    var health: CInt
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("use init()")

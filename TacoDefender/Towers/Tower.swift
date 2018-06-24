@@ -39,8 +39,11 @@ class Tower: SKSpriteNode {
     var towerColor: SKColor
     var colorBlend: CGFloat
     var turret: SKSpriteNode
-    var gameTimer: Timer!
-    var shootTimer: Timer!
+    var gameTimer = Timer()
+    var shootTimer = Timer()
+    var closestEnemy: Enemy
+    var closestEnemyDist: CGFloat
+    var targetInRange: CBool = false // thinking about using this for the timers to prevent lag maybe?
 
     
 
@@ -95,10 +98,10 @@ class Tower: SKSpriteNode {
                 colorBlend = 0.5
                 turret = SKSpriteNode()
             
-            case.chili:
+            case.chili: // TODO
                 maxHealth = 0
                 range = 0
-                firerate = 0 // TODO
+                firerate = 0
                 towerColor = .brown
                 colorBlend = 0.5
                 turret = SKSpriteNode()
@@ -111,10 +114,10 @@ class Tower: SKSpriteNode {
                 colorBlend = 0.8
                 turret = SKSpriteNode()
             
-            case.tartarSauce:
+            case.tartarSauce: // TODO
                 maxHealth = 0
                 range = 0
-                firerate = 0 // TODO
+                firerate = 0
                 towerColor = .yellow
                 colorBlend = 0.25
                 turret = SKSpriteNode()
@@ -123,50 +126,44 @@ class Tower: SKSpriteNode {
         health = maxHealth
         target = CGPoint(x: 150, y: 250)
         super.init(texture: texture, color: .white, size: (texture.size()/6))
+        
         gameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
         shootTimer = Timer.scheduledTimer(timeInterval: firerate, target: self, selector: #selector(self.shoot), userInfo: nil, repeats: true)
 
-        shootTimer.invalidate()
-        gameTimer.invalidate()
+        // invalidate stops a timer
+        //shootTimer.invalidate()
+        //gameTimer.invalidate()
+        
         self.colorBlendFactor = colorBlend
-
         self.position = position
         turret.zRotation = self.position.getAngle(CGPoint: target)
         turret.zPosition = 5
         turret.colorBlendFactor = 1
         turret.size = (self.size) - (self.size/8)
-        
         addChild(turret)
-
     }
     
     @objc func update() {
-        
-        for _ in GameScene.enemyList {
-            
-            
-        } // loops through enemies in enemyList and aims at closest
-
-        
+        if(GameScene.enemyList.count != 0){
+            getClosestEnemy()
+            turret.zRotation = self.position.getAngle(CGPoint: closestEnemy.position)
+        } //if one+ enemy exists loops through enemies in enemyList and aims at closest
     }
-    
-    // SKAction bit for its update
-    // findTarget is first part
-    // rotate is second part
-    
-    // for enemies within camera view, get distance from and to, and then check if it's the closest target, and if so face that enemy
-    
-    
-    // then check if within range and if so shoot
     
     @objc func shoot(){
         
-
-        
-        if (self.position.getDistance(CGPoint: target)) <= range*1000{
+        if (self.position.getDistance(CGPoint: target)) <= range*1000 {
             let projectile = Projectile(type: type, direction: self.position.getAngle(CGPoint: target), position: self.position)
             self.scene?.addChild(projectile)
         }
+        
+        /*
+         if ((self.position.getDistance(CGPoint: closestEnemy.position)) <= range*1000) && closestEnemy.health > 0 {
+             let projectile = Projectile(type: type, direction: self.position.getAngle(CGPoint: closestEnemy.position), position: self.position)
+             self.scene?.addChild(projectile)
+         } */
+         // replace this commented out section with the above section if shooting function works
+        
     }
     
     func destroy(){
@@ -182,8 +179,83 @@ class Tower: SKSpriteNode {
         self.health -= damage
     }
     
+    func getClosestEnemy(){
+        closestEnemyDist = closestEnemy.position.getDistance(CGPoint: self.position)
+        for enemy in GameScene.enemyList {
+            
+            if ((closestEnemy .intersects(scene!)) && !closestEnemy.position.equalTo(CGPoint(x:0,y:0))) {
+                if(closestEnemyDist > enemy.position.getDistance(CGPoint: self.position)){
+                    closestEnemy = enemy
+                    
+                }
+            } // checks if its on screen might still give a null reference but shouldn't?
+        }
+    }
+    
     func upgrade(){
-        
+        switch type{
+        case.ketchup: // upgrades into mustard
+            maxHealth = 7
+            range = 3
+            firerate = 2
+            towerColor = .yellow
+            colorBlend = 1
+            turret = SKSpriteNode()
+            turret.texture = SKTexture(imageNamed: "bottle_grey_00")
+            turret.color = towerColor
+            
+        case.mustard:
+            maxHealth = 7
+            
+        case.limeJuice:
+            maxHealth = 5
+            range = 3
+            firerate = 4
+            towerColor = .green
+            colorBlend = 0.25
+            turret = SKSpriteNode()
+            
+            
+        case.sourCream:
+            maxHealth = 5
+            range = 4
+            firerate = 5
+            towerColor = .white
+            colorBlend = 0.9
+            turret = SKSpriteNode()
+            
+        case.sriracha:
+            maxHealth = 10
+            range = 2
+            firerate = 8
+            towerColor = .red
+            colorBlend = 0.5
+            turret = SKSpriteNode()
+            
+        case.chili:
+            maxHealth = 0
+            range = 0
+            firerate = 0 // TODO
+            towerColor = .brown
+            colorBlend = 0.5
+            turret = SKSpriteNode()
+            
+        case.guacamole:
+            maxHealth = 2
+            range = 10
+            firerate = 7
+            towerColor = .green
+            colorBlend = 0.8
+            turret = SKSpriteNode()
+            
+        case.tartarSauce:
+            maxHealth = 0
+            range = 0
+            firerate = 0 // TODO
+            towerColor = .yellow
+            colorBlend = 0.25
+            turret = SKSpriteNode()
+        }
     }
 
 }
