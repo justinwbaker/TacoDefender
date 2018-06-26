@@ -148,6 +148,11 @@ class Tower: SKSpriteNode {
             getClosestEnemy()
             turret.zRotation = self.position.getAngle(CGPoint: closestEnemy.position)
         } //if one+ enemy exists loops through enemies in enemyList and aims at closest
+        
+        if(health <= 0){
+            destroy()
+            // maybe created a destroyed animation
+        }
     }
     
     @objc func shoot(){
