@@ -122,7 +122,7 @@ class Tower: SKSpriteNode {
                 colorBlend = 0.25
                 turret = SKSpriteNode()
         }
-        health = maxHealth
+        health = maxHealth
         target = CGPoint(x: 150, y: 250)
         super.init(texture: texture, color: .white, size: (texture.size()/6))
         
