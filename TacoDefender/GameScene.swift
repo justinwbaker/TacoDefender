@@ -25,10 +25,11 @@ extension CGPoint {
 
 
 
-class GameScene: SKScene {
-
+class GameScene: SKScene, SKPhysicsContactDelegate {
+    
     var tacoTruck = TacoTruck()
     var test = Tower(towerType: Tower.towerType.ketchup, CGPoint: CGPoint(x: 150, y: 150))
+    static var enemyList: Array<Enemy> = Array() // trying to get this to work not using the physics comparisions 
 
     override func didMove(to view: SKView) {
         addChild(tacoTruck)
@@ -58,5 +59,9 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
 
+    }
+    
+    override func enumerateChildNodes(withName name: String, using block: @escaping (SKNode, UnsafeMutablePointer<ObjCBool>) -> Void) {
+        <#code#>
     }
 }

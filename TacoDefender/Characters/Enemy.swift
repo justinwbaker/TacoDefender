@@ -10,6 +10,8 @@ import Foundation
 import SpriteKit
 
 class Enemy: SKSpriteNode{
+    
+    var health: CInt
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("use init()")
@@ -19,9 +21,17 @@ class Enemy: SKSpriteNode{
         let texture = SKTexture(imageNamed: "Ant")
         super.init(texture: texture, color: .white, size: texture.size())
     }
+    
+    func addEnemyToArray(){
+        
+    }
 
     func takeDamage(damage: CInt){
 
+    }
+    
+    func update(){
+        
     }
     
 }

@@ -59,7 +59,7 @@
 		5E43113620D33F3C009E2FB4 /* TacoDefenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TacoDefenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E43113A20D33F3C009E2FB4 /* TacoDefenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacoDefenderUITests.swift; sourceTree = "<group>"; };
 		5E43113C20D33F3C009E2FB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5EED177520DAF9D400E46637 /* Tower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tower.swift; sourceTree = "<group>"; };
+		5EED177520DAF9D400E46637 /* Tower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tower.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		5EED177720DAFA4700E46637 /* Goop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goop.swift; sourceTree = "<group>"; };
 		5EED177920DAFAF900E46637 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		9FB792A220D9B1DF000EBDD2 /* Projectile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projectile.swift; sourceTree = "<group>"; };
@@ -237,7 +237,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = "justin baker";
+				ORGANIZATIONNAME = easterndevelopers.ca;
 				TargetAttributes = {
 					5E43111020D33F3B009E2FB4 = {
 						CreatedOnToolsVersion = 9.4;
