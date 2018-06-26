@@ -51,6 +51,7 @@ class Projectile: SKSpriteNode {
         self.physicsBody?.affectedByGravity = false
         let dx = cos(direction) * 100
         let dy = sin(direction) * 100
+        self.zPosition = 500
         self.physicsBody?.velocity = CGVector(dx: dx, dy: dy)
     }
     

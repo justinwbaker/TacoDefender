@@ -134,7 +134,7 @@ class Tower: SKSpriteNode {
 
 
         }
-        health = maxHealth
+        health = maxHealth
         target = CGPoint(x: 150, y: 250)
         super.init(texture: texture, color: .white, size: (texture.size()/6))
         gameTimer = Timer.scheduledTimer(timeInterval: 1/30, target: self, selector: #selector(update), userInfo: nil, repeats: true)
@@ -154,14 +154,15 @@ class Tower: SKSpriteNode {
     }
     
     @objc func update() {
-        
+        print("update")
     }
     
     // SKAction bit for its update
     // findTarget is first part
     // rotate is second part
     
-    @ objc func shoot(){
+    @objc func shoot(){
+        print ("shoot")
         //fire projectile at target location as a vector
         
         if (self.position.getDistance(CGPoint: target)) <= range*100{
