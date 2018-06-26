@@ -122,7 +122,6 @@ class Tower: SKSpriteNode {
                 colorBlend = 0.25
                 turret = SKSpriteNode()
         }
-        
         health = maxHealth
         target = CGPoint(x: 150, y: 250)
         super.init(texture: texture, color: .white, size: (texture.size()/6))
@@ -155,7 +154,13 @@ class Tower: SKSpriteNode {
         }
     }
     
+    // SKAction bit for its update
+    // findTarget is first part
+    // rotate is second part
+    
     @objc func shoot(){
+        print ("shoot")
+        //fire projectile at target location as a vector
         
         if (self.position.getDistance(CGPoint: target)) <= range*1000 {
             let projectile = Projectile(type: type, direction: self.position.getAngle(CGPoint: target), position: self.position)

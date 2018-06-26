@@ -1,639 +1,639 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 50;
-	objects = {
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 50;
+    objects = {
 
 /* Begin PBXBuildFile section */
-		5E2AABF420D862D4006A0306 /* TacoTruck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2AABF320D862D4006A0306 /* TacoTruck.swift */; };
-		5E43111520D33F3B009E2FB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E43111420D33F3B009E2FB4 /* AppDelegate.swift */; };
-		5E43111720D33F3B009E2FB4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5E43111620D33F3B009E2FB4 /* GameScene.sks */; };
-		5E43111920D33F3B009E2FB4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5E43111820D33F3B009E2FB4 /* Actions.sks */; };
-		5E43111B20D33F3B009E2FB4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E43111A20D33F3B009E2FB4 /* GameScene.swift */; };
-		5E43111D20D33F3B009E2FB4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E43111C20D33F3B009E2FB4 /* GameViewController.swift */; };
-		5E43112020D33F3B009E2FB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E43111E20D33F3B009E2FB4 /* Main.storyboard */; };
-		5E43112220D33F3B009E2FB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E43112120D33F3B009E2FB4 /* Assets.xcassets */; };
-		5E43112520D33F3B009E2FB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E43112320D33F3B009E2FB4 /* LaunchScreen.storyboard */; };
-		5E43113020D33F3B009E2FB4 /* TacoDefenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E43112F20D33F3B009E2FB4 /* TacoDefenderTests.swift */; };
-		5E43113B20D33F3C009E2FB4 /* TacoDefenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E43113A20D33F3C009E2FB4 /* TacoDefenderUITests.swift */; };
-		5EED177620DAF9D400E46637 /* Tower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EED177520DAF9D400E46637 /* Tower.swift */; };
-		5EED177820DAFA4700E46637 /* Goop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EED177720DAFA4700E46637 /* Goop.swift */; };
-		5EED177A20DAFAF900E46637 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EED177920DAFAF900E46637 /* Enemy.swift */; };
-		9FB792A320D9B1DF000EBDD2 /* Projectile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB792A220D9B1DF000EBDD2 /* Projectile.swift */; };
+        5E2AABF420D862D4006A0306 /* TacoTruck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2AABF320D862D4006A0306 /* TacoTruck.swift */; };
+        5E43111520D33F3B009E2FB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E43111420D33F3B009E2FB4 /* AppDelegate.swift */; };
+        5E43111720D33F3B009E2FB4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5E43111620D33F3B009E2FB4 /* GameScene.sks */; };
+        5E43111920D33F3B009E2FB4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5E43111820D33F3B009E2FB4 /* Actions.sks */; };
+        5E43111B20D33F3B009E2FB4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E43111A20D33F3B009E2FB4 /* GameScene.swift */; };
+        5E43111D20D33F3B009E2FB4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E43111C20D33F3B009E2FB4 /* GameViewController.swift */; };
+        5E43112020D33F3B009E2FB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E43111E20D33F3B009E2FB4 /* Main.storyboard */; };
+        5E43112220D33F3B009E2FB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E43112120D33F3B009E2FB4 /* Assets.xcassets */; };
+        5E43112520D33F3B009E2FB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E43112320D33F3B009E2FB4 /* LaunchScreen.storyboard */; };
+        5E43113020D33F3B009E2FB4 /* TacoDefenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E43112F20D33F3B009E2FB4 /* TacoDefenderTests.swift */; };
+        5E43113B20D33F3C009E2FB4 /* TacoDefenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E43113A20D33F3C009E2FB4 /* TacoDefenderUITests.swift */; };
+        5EED177620DAF9D400E46637 /* Tower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EED177520DAF9D400E46637 /* Tower.swift */; };
+        5EED177820DAFA4700E46637 /* Goop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EED177720DAFA4700E46637 /* Goop.swift */; };
+        5EED177A20DAFAF900E46637 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EED177920DAFAF900E46637 /* Enemy.swift */; };
+        9FB792A320D9B1DF000EBDD2 /* Projectile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB792A220D9B1DF000EBDD2 /* Projectile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5E43112C20D33F3B009E2FB4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5E43110920D33F3A009E2FB4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5E43111020D33F3B009E2FB4;
-			remoteInfo = TacoDefender;
-		};
-		5E43113720D33F3C009E2FB4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5E43110920D33F3A009E2FB4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5E43111020D33F3B009E2FB4;
-			remoteInfo = TacoDefender;
-		};
+        5E43112C20D33F3B009E2FB4 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = 5E43110920D33F3A009E2FB4 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = 5E43111020D33F3B009E2FB4;
+            remoteInfo = TacoDefender;
+        };
+        5E43113720D33F3C009E2FB4 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = 5E43110920D33F3A009E2FB4 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = 5E43111020D33F3B009E2FB4;
+            remoteInfo = TacoDefender;
+        };
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5E2AABF320D862D4006A0306 /* TacoTruck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacoTruck.swift; sourceTree = "<group>"; };
-		5E43111120D33F3B009E2FB4 /* TacoDefender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TacoDefender.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E43111420D33F3B009E2FB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5E43111620D33F3B009E2FB4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		5E43111820D33F3B009E2FB4 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		5E43111A20D33F3B009E2FB4 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		5E43111C20D33F3B009E2FB4 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		5E43111F20D33F3B009E2FB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5E43112120D33F3B009E2FB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TacoDefender/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		5E43112420D33F3B009E2FB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5E43112620D33F3B009E2FB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E43112B20D33F3B009E2FB4 /* TacoDefenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TacoDefenderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E43112F20D33F3B009E2FB4 /* TacoDefenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacoDefenderTests.swift; sourceTree = "<group>"; };
-		5E43113120D33F3B009E2FB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E43113620D33F3C009E2FB4 /* TacoDefenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TacoDefenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E43113A20D33F3C009E2FB4 /* TacoDefenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacoDefenderUITests.swift; sourceTree = "<group>"; };
-		5E43113C20D33F3C009E2FB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5EED177520DAF9D400E46637 /* Tower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tower.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
-		5EED177720DAFA4700E46637 /* Goop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goop.swift; sourceTree = "<group>"; };
-		5EED177920DAFAF900E46637 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
-		9FB792A220D9B1DF000EBDD2 /* Projectile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projectile.swift; sourceTree = "<group>"; };
+        5E2AABF320D862D4006A0306 /* TacoTruck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacoTruck.swift; sourceTree = "<group>"; };
+        5E43111120D33F3B009E2FB4 /* TacoDefender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TacoDefender.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        5E43111420D33F3B009E2FB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+        5E43111620D33F3B009E2FB4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+        5E43111820D33F3B009E2FB4 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+        5E43111A20D33F3B009E2FB4 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+        5E43111C20D33F3B009E2FB4 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+        5E43111F20D33F3B009E2FB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+        5E43112120D33F3B009E2FB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TacoDefender/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+        5E43112420D33F3B009E2FB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+        5E43112620D33F3B009E2FB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        5E43112B20D33F3B009E2FB4 /* TacoDefenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TacoDefenderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+        5E43112F20D33F3B009E2FB4 /* TacoDefenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacoDefenderTests.swift; sourceTree = "<group>"; };
+        5E43113120D33F3B009E2FB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        5E43113620D33F3C009E2FB4 /* TacoDefenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TacoDefenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+        5E43113A20D33F3C009E2FB4 /* TacoDefenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacoDefenderUITests.swift; sourceTree = "<group>"; };
+        5E43113C20D33F3C009E2FB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        5EED177520DAF9D400E46637 /* Tower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tower.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
+        5EED177720DAFA4700E46637 /* Goop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goop.swift; sourceTree = "<group>"; };
+        5EED177920DAFAF900E46637 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+        9FB792A220D9B1DF000EBDD2 /* Projectile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projectile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5E43110E20D33F3B009E2FB4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E43112820D33F3B009E2FB4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E43113320D33F3C009E2FB4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        5E43110E20D33F3B009E2FB4 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        5E43112820D33F3B009E2FB4 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        5E43113320D33F3C009E2FB4 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5E2AABF220D862A7006A0306 /* Characters */ = {
-			isa = PBXGroup;
-			children = (
-				5E2AABF320D862D4006A0306 /* TacoTruck.swift */,
-				5EED177920DAFAF900E46637 /* Enemy.swift */,
-			);
-			path = Characters;
-			sourceTree = "<group>";
-		};
-		5E43110820D33F3A009E2FB4 = {
-			isa = PBXGroup;
-			children = (
-				5EE9C2EF20D86A3E00F689DA /* Paints */,
-				5E43111320D33F3B009E2FB4 /* TacoDefender */,
-				5E43112E20D33F3B009E2FB4 /* TacoDefenderTests */,
-				5E43113920D33F3C009E2FB4 /* TacoDefenderUITests */,
-				5E43111220D33F3B009E2FB4 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		5E43111220D33F3B009E2FB4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5E43111120D33F3B009E2FB4 /* TacoDefender.app */,
-				5E43112B20D33F3B009E2FB4 /* TacoDefenderTests.xctest */,
-				5E43113620D33F3C009E2FB4 /* TacoDefenderUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		5E43111320D33F3B009E2FB4 /* TacoDefender */ = {
-			isa = PBXGroup;
-			children = (
-				5E43111420D33F3B009E2FB4 /* AppDelegate.swift */,
-				5E43111620D33F3B009E2FB4 /* GameScene.sks */,
-				5E43111820D33F3B009E2FB4 /* Actions.sks */,
-				5E43111A20D33F3B009E2FB4 /* GameScene.swift */,
-				5E76C1BE20D9C81000099965 /* Towers */,
-				5E2AABF220D862A7006A0306 /* Characters */,
-				5E43111C20D33F3B009E2FB4 /* GameViewController.swift */,
-				5E43111E20D33F3B009E2FB4 /* Main.storyboard */,
-				5E43112120D33F3B009E2FB4 /* Assets.xcassets */,
-				5E43112320D33F3B009E2FB4 /* LaunchScreen.storyboard */,
-				5E43112620D33F3B009E2FB4 /* Info.plist */,
-			);
-			path = TacoDefender;
-			sourceTree = "<group>";
-		};
-		5E43112E20D33F3B009E2FB4 /* TacoDefenderTests */ = {
-			isa = PBXGroup;
-			children = (
-				5E43112F20D33F3B009E2FB4 /* TacoDefenderTests.swift */,
-				5E43113120D33F3B009E2FB4 /* Info.plist */,
-			);
-			path = TacoDefenderTests;
-			sourceTree = "<group>";
-		};
-		5E43113920D33F3C009E2FB4 /* TacoDefenderUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5E43113A20D33F3C009E2FB4 /* TacoDefenderUITests.swift */,
-				5E43113C20D33F3C009E2FB4 /* Info.plist */,
-			);
-			path = TacoDefenderUITests;
-			sourceTree = "<group>";
-		};
-		5E76C1BE20D9C81000099965 /* Towers */ = {
-			isa = PBXGroup;
-			children = (
-				9FB792A220D9B1DF000EBDD2 /* Projectile.swift */,
-				5EED177520DAF9D400E46637 /* Tower.swift */,
-				5EED177720DAFA4700E46637 /* Goop.swift */,
-			);
-			path = Towers;
-			sourceTree = "<group>";
-		};
-		5EE9C2EF20D86A3E00F689DA /* Paints */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Paints;
-			sourceTree = "<group>";
-		};
+        5E2AABF220D862A7006A0306 /* Characters */ = {
+            isa = PBXGroup;
+            children = (
+                5E2AABF320D862D4006A0306 /* TacoTruck.swift */,
+                5EED177920DAFAF900E46637 /* Enemy.swift */,
+            );
+            path = Characters;
+            sourceTree = "<group>";
+        };
+        5E43110820D33F3A009E2FB4 = {
+            isa = PBXGroup;
+            children = (
+                5EE9C2EF20D86A3E00F689DA /* Paints */,
+                5E43111320D33F3B009E2FB4 /* TacoDefender */,
+                5E43112E20D33F3B009E2FB4 /* TacoDefenderTests */,
+                5E43113920D33F3C009E2FB4 /* TacoDefenderUITests */,
+                5E43111220D33F3B009E2FB4 /* Products */,
+            );
+            sourceTree = "<group>";
+        };
+        5E43111220D33F3B009E2FB4 /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                5E43111120D33F3B009E2FB4 /* TacoDefender.app */,
+                5E43112B20D33F3B009E2FB4 /* TacoDefenderTests.xctest */,
+                5E43113620D33F3C009E2FB4 /* TacoDefenderUITests.xctest */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        5E43111320D33F3B009E2FB4 /* TacoDefender */ = {
+            isa = PBXGroup;
+            children = (
+                5E43111420D33F3B009E2FB4 /* AppDelegate.swift */,
+                5E43111620D33F3B009E2FB4 /* GameScene.sks */,
+                5E43111820D33F3B009E2FB4 /* Actions.sks */,
+                5E43111A20D33F3B009E2FB4 /* GameScene.swift */,
+                5E76C1BE20D9C81000099965 /* Towers */,
+                5E2AABF220D862A7006A0306 /* Characters */,
+                5E43111C20D33F3B009E2FB4 /* GameViewController.swift */,
+                5E43111E20D33F3B009E2FB4 /* Main.storyboard */,
+                5E43112120D33F3B009E2FB4 /* Assets.xcassets */,
+                5E43112320D33F3B009E2FB4 /* LaunchScreen.storyboard */,
+                5E43112620D33F3B009E2FB4 /* Info.plist */,
+            );
+            path = TacoDefender;
+            sourceTree = "<group>";
+        };
+        5E43112E20D33F3B009E2FB4 /* TacoDefenderTests */ = {
+            isa = PBXGroup;
+            children = (
+                5E43112F20D33F3B009E2FB4 /* TacoDefenderTests.swift */,
+                5E43113120D33F3B009E2FB4 /* Info.plist */,
+            );
+            path = TacoDefenderTests;
+            sourceTree = "<group>";
+        };
+        5E43113920D33F3C009E2FB4 /* TacoDefenderUITests */ = {
+            isa = PBXGroup;
+            children = (
+                5E43113A20D33F3C009E2FB4 /* TacoDefenderUITests.swift */,
+                5E43113C20D33F3C009E2FB4 /* Info.plist */,
+            );
+            path = TacoDefenderUITests;
+            sourceTree = "<group>";
+        };
+        5E76C1BE20D9C81000099965 /* Towers */ = {
+            isa = PBXGroup;
+            children = (
+                9FB792A220D9B1DF000EBDD2 /* Projectile.swift */,
+                5EED177520DAF9D400E46637 /* Tower.swift */,
+                5EED177720DAFA4700E46637 /* Goop.swift */,
+            );
+            path = Towers;
+            sourceTree = "<group>";
+        };
+        5EE9C2EF20D86A3E00F689DA /* Paints */ = {
+            isa = PBXGroup;
+            children = (
+            );
+            path = Paints;
+            sourceTree = "<group>";
+        };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5E43111020D33F3B009E2FB4 /* TacoDefender */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5E43113F20D33F3C009E2FB4 /* Build configuration list for PBXNativeTarget "TacoDefender" */;
-			buildPhases = (
-				5E43110D20D33F3B009E2FB4 /* Sources */,
-				5E43110E20D33F3B009E2FB4 /* Frameworks */,
-				5E43110F20D33F3B009E2FB4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TacoDefender;
-			productName = TacoDefender;
-			productReference = 5E43111120D33F3B009E2FB4 /* TacoDefender.app */;
-			productType = "com.apple.product-type.application";
-		};
-		5E43112A20D33F3B009E2FB4 /* TacoDefenderTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5E43114220D33F3C009E2FB4 /* Build configuration list for PBXNativeTarget "TacoDefenderTests" */;
-			buildPhases = (
-				5E43112720D33F3B009E2FB4 /* Sources */,
-				5E43112820D33F3B009E2FB4 /* Frameworks */,
-				5E43112920D33F3B009E2FB4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5E43112D20D33F3B009E2FB4 /* PBXTargetDependency */,
-			);
-			name = TacoDefenderTests;
-			productName = TacoDefenderTests;
-			productReference = 5E43112B20D33F3B009E2FB4 /* TacoDefenderTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		5E43113520D33F3C009E2FB4 /* TacoDefenderUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5E43114520D33F3C009E2FB4 /* Build configuration list for PBXNativeTarget "TacoDefenderUITests" */;
-			buildPhases = (
-				5E43113220D33F3C009E2FB4 /* Sources */,
-				5E43113320D33F3C009E2FB4 /* Frameworks */,
-				5E43113420D33F3C009E2FB4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5E43113820D33F3C009E2FB4 /* PBXTargetDependency */,
-			);
-			name = TacoDefenderUITests;
-			productName = TacoDefenderUITests;
-			productReference = 5E43113620D33F3C009E2FB4 /* TacoDefenderUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
+        5E43111020D33F3B009E2FB4 /* TacoDefender */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 5E43113F20D33F3C009E2FB4 /* Build configuration list for PBXNativeTarget "TacoDefender" */;
+            buildPhases = (
+                5E43110D20D33F3B009E2FB4 /* Sources */,
+                5E43110E20D33F3B009E2FB4 /* Frameworks */,
+                5E43110F20D33F3B009E2FB4 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = TacoDefender;
+            productName = TacoDefender;
+            productReference = 5E43111120D33F3B009E2FB4 /* TacoDefender.app */;
+            productType = "com.apple.product-type.application";
+        };
+        5E43112A20D33F3B009E2FB4 /* TacoDefenderTests */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 5E43114220D33F3C009E2FB4 /* Build configuration list for PBXNativeTarget "TacoDefenderTests" */;
+            buildPhases = (
+                5E43112720D33F3B009E2FB4 /* Sources */,
+                5E43112820D33F3B009E2FB4 /* Frameworks */,
+                5E43112920D33F3B009E2FB4 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                5E43112D20D33F3B009E2FB4 /* PBXTargetDependency */,
+            );
+            name = TacoDefenderTests;
+            productName = TacoDefenderTests;
+            productReference = 5E43112B20D33F3B009E2FB4 /* TacoDefenderTests.xctest */;
+            productType = "com.apple.product-type.bundle.unit-test";
+        };
+        5E43113520D33F3C009E2FB4 /* TacoDefenderUITests */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 5E43114520D33F3C009E2FB4 /* Build configuration list for PBXNativeTarget "TacoDefenderUITests" */;
+            buildPhases = (
+                5E43113220D33F3C009E2FB4 /* Sources */,
+                5E43113320D33F3C009E2FB4 /* Frameworks */,
+                5E43113420D33F3C009E2FB4 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                5E43113820D33F3C009E2FB4 /* PBXTargetDependency */,
+            );
+            name = TacoDefenderUITests;
+            productName = TacoDefenderUITests;
+            productReference = 5E43113620D33F3C009E2FB4 /* TacoDefenderUITests.xctest */;
+            productType = "com.apple.product-type.bundle.ui-testing";
+        };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5E43110920D33F3A009E2FB4 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = easterndevelopers.ca;
-				TargetAttributes = {
-					5E43111020D33F3B009E2FB4 = {
-						CreatedOnToolsVersion = 9.4;
-					};
-					5E43112A20D33F3B009E2FB4 = {
-						CreatedOnToolsVersion = 9.4;
-						TestTargetID = 5E43111020D33F3B009E2FB4;
-					};
-					5E43113520D33F3C009E2FB4 = {
-						CreatedOnToolsVersion = 9.4;
-						TestTargetID = 5E43111020D33F3B009E2FB4;
-					};
-				};
-			};
-			buildConfigurationList = 5E43110C20D33F3A009E2FB4 /* Build configuration list for PBXProject "TacoDefender" */;
-			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 5E43110820D33F3A009E2FB4;
-			productRefGroup = 5E43111220D33F3B009E2FB4 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				5E43111020D33F3B009E2FB4 /* TacoDefender */,
-				5E43112A20D33F3B009E2FB4 /* TacoDefenderTests */,
-				5E43113520D33F3C009E2FB4 /* TacoDefenderUITests */,
-			);
-		};
+        5E43110920D33F3A009E2FB4 /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastSwiftUpdateCheck = 0940;
+                LastUpgradeCheck = 0940;
+                ORGANIZATIONNAME = easterndevelopers.ca;
+                TargetAttributes = {
+                    5E43111020D33F3B009E2FB4 = {
+                        CreatedOnToolsVersion = 9.4;
+                    };
+                    5E43112A20D33F3B009E2FB4 = {
+                        CreatedOnToolsVersion = 9.4;
+                        TestTargetID = 5E43111020D33F3B009E2FB4;
+                    };
+                    5E43113520D33F3C009E2FB4 = {
+                        CreatedOnToolsVersion = 9.4;
+                        TestTargetID = 5E43111020D33F3B009E2FB4;
+                    };
+                };
+            };
+            buildConfigurationList = 5E43110C20D33F3A009E2FB4 /* Build configuration list for PBXProject "TacoDefender" */;
+            compatibilityVersion = "Xcode 9.3";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = 5E43110820D33F3A009E2FB4;
+            productRefGroup = 5E43111220D33F3B009E2FB4 /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                5E43111020D33F3B009E2FB4 /* TacoDefender */,
+                5E43112A20D33F3B009E2FB4 /* TacoDefenderTests */,
+                5E43113520D33F3C009E2FB4 /* TacoDefenderUITests */,
+            );
+        };
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5E43110F20D33F3B009E2FB4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5E43112020D33F3B009E2FB4 /* Main.storyboard in Resources */,
-				5E43111720D33F3B009E2FB4 /* GameScene.sks in Resources */,
-				5E43112220D33F3B009E2FB4 /* Assets.xcassets in Resources */,
-				5E43112520D33F3B009E2FB4 /* LaunchScreen.storyboard in Resources */,
-				5E43111920D33F3B009E2FB4 /* Actions.sks in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E43112920D33F3B009E2FB4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E43113420D33F3C009E2FB4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        5E43110F20D33F3B009E2FB4 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                5E43112020D33F3B009E2FB4 /* Main.storyboard in Resources */,
+                5E43111720D33F3B009E2FB4 /* GameScene.sks in Resources */,
+                5E43112220D33F3B009E2FB4 /* Assets.xcassets in Resources */,
+                5E43112520D33F3B009E2FB4 /* LaunchScreen.storyboard in Resources */,
+                5E43111920D33F3B009E2FB4 /* Actions.sks in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        5E43112920D33F3B009E2FB4 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        5E43113420D33F3C009E2FB4 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5E43110D20D33F3B009E2FB4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9FB792A320D9B1DF000EBDD2 /* Projectile.swift in Sources */,
-				5E43111B20D33F3B009E2FB4 /* GameScene.swift in Sources */,
-				5E43111D20D33F3B009E2FB4 /* GameViewController.swift in Sources */,
-				5EED177620DAF9D400E46637 /* Tower.swift in Sources */,
-				5EED177A20DAFAF900E46637 /* Enemy.swift in Sources */,
-				5E2AABF420D862D4006A0306 /* TacoTruck.swift in Sources */,
-				5E43111520D33F3B009E2FB4 /* AppDelegate.swift in Sources */,
-				5EED177820DAFA4700E46637 /* Goop.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E43112720D33F3B009E2FB4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5E43113020D33F3B009E2FB4 /* TacoDefenderTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E43113220D33F3C009E2FB4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5E43113B20D33F3C009E2FB4 /* TacoDefenderUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        5E43110D20D33F3B009E2FB4 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                9FB792A320D9B1DF000EBDD2 /* Projectile.swift in Sources */,
+                5E43111B20D33F3B009E2FB4 /* GameScene.swift in Sources */,
+                5E43111D20D33F3B009E2FB4 /* GameViewController.swift in Sources */,
+                5EED177620DAF9D400E46637 /* Tower.swift in Sources */,
+                5EED177A20DAFAF900E46637 /* Enemy.swift in Sources */,
+                5E2AABF420D862D4006A0306 /* TacoTruck.swift in Sources */,
+                5E43111520D33F3B009E2FB4 /* AppDelegate.swift in Sources */,
+                5EED177820DAFA4700E46637 /* Goop.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        5E43112720D33F3B009E2FB4 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                5E43113020D33F3B009E2FB4 /* TacoDefenderTests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        5E43113220D33F3C009E2FB4 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                5E43113B20D33F3C009E2FB4 /* TacoDefenderUITests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5E43112D20D33F3B009E2FB4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5E43111020D33F3B009E2FB4 /* TacoDefender */;
-			targetProxy = 5E43112C20D33F3B009E2FB4 /* PBXContainerItemProxy */;
-		};
-		5E43113820D33F3C009E2FB4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5E43111020D33F3B009E2FB4 /* TacoDefender */;
-			targetProxy = 5E43113720D33F3C009E2FB4 /* PBXContainerItemProxy */;
-		};
+        5E43112D20D33F3B009E2FB4 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = 5E43111020D33F3B009E2FB4 /* TacoDefender */;
+            targetProxy = 5E43112C20D33F3B009E2FB4 /* PBXContainerItemProxy */;
+        };
+        5E43113820D33F3C009E2FB4 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = 5E43111020D33F3B009E2FB4 /* TacoDefender */;
+            targetProxy = 5E43113720D33F3C009E2FB4 /* PBXContainerItemProxy */;
+        };
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5E43111E20D33F3B009E2FB4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5E43111F20D33F3B009E2FB4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5E43112320D33F3B009E2FB4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5E43112420D33F3B009E2FB4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
+        5E43111E20D33F3B009E2FB4 /* Main.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                5E43111F20D33F3B009E2FB4 /* Base */,
+            );
+            name = Main.storyboard;
+            sourceTree = "<group>";
+        };
+        5E43112320D33F3B009E2FB4 /* LaunchScreen.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                5E43112420D33F3B009E2FB4 /* Base */,
+            );
+            name = LaunchScreen.storyboard;
+            sourceTree = "<group>";
+        };
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		5E43113D20D33F3C009E2FB4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		5E43113E20D33F3C009E2FB4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		5E43114020D33F3C009E2FB4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TacoDefender/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = easterndevelopers.ca.TacoDefender;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		5E43114120D33F3C009E2FB4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TacoDefender/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = easterndevelopers.ca.TacoDefender;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		5E43114320D33F3C009E2FB4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TacoDefenderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = easterndevelopers.ca.TacoDefenderTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TacoDefender.app/TacoDefender";
-			};
-			name = Debug;
-		};
-		5E43114420D33F3C009E2FB4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TacoDefenderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = easterndevelopers.ca.TacoDefenderTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TacoDefender.app/TacoDefender";
-			};
-			name = Release;
-		};
-		5E43114620D33F3C009E2FB4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TacoDefenderUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = easterndevelopers.ca.TacoDefenderUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TacoDefender;
-			};
-			name = Debug;
-		};
-		5E43114720D33F3C009E2FB4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TacoDefenderUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = easterndevelopers.ca.TacoDefenderUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TacoDefender;
-			};
-			name = Release;
-		};
+        5E43113D20D33F3C009E2FB4 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = dwarf;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                ENABLE_TESTABILITY = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_DYNAMIC_NO_PIC = NO;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PREPROCESSOR_DEFINITIONS = (
+                    "DEBUG=1",
+                    "$(inherited)",
+                );
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+                MTL_ENABLE_DEBUG_INFO = YES;
+                ONLY_ACTIVE_ARCH = YES;
+                SDKROOT = iphoneos;
+                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            };
+            name = Debug;
+        };
+        5E43113E20D33F3C009E2FB4 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                ENABLE_NS_ASSERTIONS = NO;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+                MTL_ENABLE_DEBUG_INFO = NO;
+                SDKROOT = iphoneos;
+                SWIFT_COMPILATION_MODE = wholemodule;
+                SWIFT_OPTIMIZATION_LEVEL = "-O";
+                VALIDATE_PRODUCT = YES;
+            };
+            name = Release;
+        };
+        5E43114020D33F3C009E2FB4 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = TacoDefender/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = easterndevelopers.ca.TacoDefender;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Debug;
+        };
+        5E43114120D33F3C009E2FB4 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = TacoDefender/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = easterndevelopers.ca.TacoDefender;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Release;
+        };
+        5E43114320D33F3C009E2FB4 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = TacoDefenderTests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = easterndevelopers.ca.TacoDefenderTests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TacoDefender.app/TacoDefender";
+            };
+            name = Debug;
+        };
+        5E43114420D33F3C009E2FB4 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = TacoDefenderTests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = easterndevelopers.ca.TacoDefenderTests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TacoDefender.app/TacoDefender";
+            };
+            name = Release;
+        };
+        5E43114620D33F3C009E2FB4 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = TacoDefenderUITests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = easterndevelopers.ca.TacoDefenderUITests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_TARGET_NAME = TacoDefender;
+            };
+            name = Debug;
+        };
+        5E43114720D33F3C009E2FB4 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = TacoDefenderUITests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = easterndevelopers.ca.TacoDefenderUITests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_TARGET_NAME = TacoDefender;
+            };
+            name = Release;
+        };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5E43110C20D33F3A009E2FB4 /* Build configuration list for PBXProject "TacoDefender" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5E43113D20D33F3C009E2FB4 /* Debug */,
-				5E43113E20D33F3C009E2FB4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5E43113F20D33F3C009E2FB4 /* Build configuration list for PBXNativeTarget "TacoDefender" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5E43114020D33F3C009E2FB4 /* Debug */,
-				5E43114120D33F3C009E2FB4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5E43114220D33F3C009E2FB4 /* Build configuration list for PBXNativeTarget "TacoDefenderTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5E43114320D33F3C009E2FB4 /* Debug */,
-				5E43114420D33F3C009E2FB4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5E43114520D33F3C009E2FB4 /* Build configuration list for PBXNativeTarget "TacoDefenderUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5E43114620D33F3C009E2FB4 /* Debug */,
-				5E43114720D33F3C009E2FB4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+        5E43110C20D33F3A009E2FB4 /* Build configuration list for PBXProject "TacoDefender" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                5E43113D20D33F3C009E2FB4 /* Debug */,
+                5E43113E20D33F3C009E2FB4 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        5E43113F20D33F3C009E2FB4 /* Build configuration list for PBXNativeTarget "TacoDefender" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                5E43114020D33F3C009E2FB4 /* Debug */,
+                5E43114120D33F3C009E2FB4 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        5E43114220D33F3C009E2FB4 /* Build configuration list for PBXNativeTarget "TacoDefenderTests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                5E43114320D33F3C009E2FB4 /* Debug */,
+                5E43114420D33F3C009E2FB4 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        5E43114520D33F3C009E2FB4 /* Build configuration list for PBXNativeTarget "TacoDefenderUITests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                5E43114620D33F3C009E2FB4 /* Debug */,
+                5E43114720D33F3C009E2FB4 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
 /* End XCConfigurationList section */
-	};
-	rootObject = 5E43110920D33F3A009E2FB4 /* Project object */;
+    };
+    rootObject = 5E43110920D33F3A009E2FB4 /* Project object */;
 }
