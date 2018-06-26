@@ -208,7 +208,7 @@ class Tower: SKSpriteNode {
     
     func upgrade(){
         switch type{
-        case.ketchup: // upgrades into mustard
+        case.ketchup: // Mustard Upgrade
             maxHealth = 7
             range = 3
             firerate = 2
@@ -219,18 +219,9 @@ class Tower: SKSpriteNode {
             turret.color = towerColor
             
         case.mustard:
-            maxHealth = 7
-            
-        case.limeJuice:
-            maxHealth = 5
-            range = 3
-            firerate = 4
-            towerColor = .green
-            colorBlend = 0.25
-            turret = SKSpriteNode()
-            
-            
-        case.sourCream:
+            colorBlend = 1
+
+        case.limeJuice: // SourCream Upgrade
             maxHealth = 5
             range = 4
             firerate = 5
@@ -238,37 +229,21 @@ class Tower: SKSpriteNode {
             colorBlend = 0.9
             turret = SKSpriteNode()
             
+        case.sourCream:
+            colorBlend = 0.9
+            
         case.sriracha:
-            maxHealth = 10
-            range = 2
-            firerate = 8
-            towerColor = .red
             colorBlend = 0.5
-            turret = SKSpriteNode()
             
         case.chili:
-            maxHealth = 0
-            range = 0
-            firerate = 0 // TODO
-            towerColor = .brown
             colorBlend = 0.5
-            turret = SKSpriteNode()
             
         case.guacamole:
-            maxHealth = 2
-            range = 10
-            firerate = 7
-            towerColor = .green
             colorBlend = 0.8
-            turret = SKSpriteNode()
             
         case.tartarSauce:
-            maxHealth = 0
-            range = 0
-            firerate = 0 // TODO
-            towerColor = .yellow
             colorBlend = 0.25
-            turret = SKSpriteNode()
+
         }
     }
 
