@@ -124,6 +124,8 @@ class Tower: SKSpriteNode {
         }
         health = maxHealth
         target = CGPoint(x: 150, y: 250)
+        self.closestEnemy = Enemy()
+        self.closestEnemyDist = 0
         super.init(texture: texture, color: .white, size: (texture.size()/6))
         
         gameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)

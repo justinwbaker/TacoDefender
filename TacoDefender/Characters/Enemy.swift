@@ -19,6 +19,7 @@ class Enemy: SKSpriteNode{
 
     init() {
         let texture = SKTexture(imageNamed: "Ant")
+        self.health = 0
         super.init(texture: texture, color: .white, size: texture.size())
     }
     
