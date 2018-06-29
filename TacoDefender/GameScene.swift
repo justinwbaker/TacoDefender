@@ -2,8 +2,8 @@
 //  GameScene.swift
 //  TacoDefender
 //
-//  Created by Justin Baker, Cody Cormeir, and Ben Hancock on 2018-06-20.
-//  Copyright © 2018 Justin Baker, Cody Cormeir, and Ben Hancock . All rights reserved.
+//  Created by Justin Baker, Cody Cormier, and Ben Hancock on 2018-06-20.
+//  Copyright © 2018 Justin Baker, Cody Cormier, and Ben Hancock . All rights reserved.
 //
 
 import SpriteKit
@@ -29,7 +29,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     var tacoTruck = TacoTruck()
     var test = Tower(towerType: Tower.towerType.ketchup, CGPoint: CGPoint(x: 150, y: 150))
-    static var enemyList: Array<Enemy> = Array() // trying to get this to work not using the physics comparisions 
 
     override func didMove(to view: SKView) {
         addChild(tacoTruck)
@@ -37,7 +36,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
 
     func touchDown(atPoint pos : CGPoint) {
-
+        if(0 == 0){
+            
+        }
+        else if(1 == 1){
+            
+        }
     }
     
     func touchMoved(toPoint pos : CGPoint) {
@@ -58,7 +62,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     
     override func update(_ currentTime: TimeInterval) {
-
     }
     
 

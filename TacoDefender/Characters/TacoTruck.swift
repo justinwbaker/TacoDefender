@@ -13,6 +13,8 @@ class TacoTruck: SKSpriteNode {
 
     var tacos = 5
     var foodPoints = 100
+    static var enemyList: Array<Enemy> = Array()
+
 
 
     required init?(coder aDecoder: NSCoder) {
@@ -29,5 +31,15 @@ class TacoTruck: SKSpriteNode {
         zPosition = 3
 
     }
+    
+    func increaseWave(){
+        Enemy.wave += 1
+    }
+    
+    func lose(){
+        
+    }
+    
+
 
 }

@@ -145,7 +145,7 @@ class Tower: SKSpriteNode {
     }
     
     @objc func update() {
-        if(GameScene.enemyList.count != 0){
+        if(TacoTruck.enemyList.count != 0){
             getClosestEnemy()
             turret.zRotation = self.position.getAngle(CGPoint: closestEnemy.position)
         } //if one+ enemy exists loops through enemies in enemyList and aims at closest
@@ -195,7 +195,7 @@ class Tower: SKSpriteNode {
     
     func getClosestEnemy(){
         closestEnemyDist = closestEnemy.position.getDistance(CGPoint: self.position)
-        for enemy in GameScene.enemyList {
+        for enemy in TacoTruck.enemyList {
             
             if ((closestEnemy .intersects(scene!)) && !closestEnemy.position.equalTo(CGPoint(x:0,y:0))) {
                 if(closestEnemyDist > enemy.position.getDistance(CGPoint: self.position)){

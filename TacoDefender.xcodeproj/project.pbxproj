@@ -22,8 +22,6 @@
 		5EED177820DAFA4700E46637 /* Goop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EED177720DAFA4700E46637 /* Goop.swift */; };
 		5EED177A20DAFAF900E46637 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EED177920DAFAF900E46637 /* Enemy.swift */; };
 		9FB792A320D9B1DF000EBDD2 /* Projectile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB792A220D9B1DF000EBDD2 /* Projectile.swift */; };
-		C92A79C420E2F66D00957871 /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92A79C320E2F66D00957871 /* Animatable.swift */; };
-		C92A79C620E2F7F600957871 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92A79C520E2F7F600957871 /* Types.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +63,6 @@
 		5EED177720DAFA4700E46637 /* Goop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goop.swift; sourceTree = "<group>"; };
 		5EED177920DAFAF900E46637 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		9FB792A220D9B1DF000EBDD2 /* Projectile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projectile.swift; sourceTree = "<group>"; };
-		C92A79C320E2F66D00957871 /* Animatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animatable.swift; sourceTree = "<group>"; };
-		C92A79C520E2F7F600957871 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +133,7 @@
 				5E43112120D33F3B009E2FB4 /* Assets.xcassets */,
 				5E43112320D33F3B009E2FB4 /* LaunchScreen.storyboard */,
 				5E43112620D33F3B009E2FB4 /* Info.plist */,
-				C92A79C120E2F62F00957871 /* Animatable */,
+				5E2AABF220D862A7006A0306 /* Characters */,
 			);
 			path = TacoDefender;
 			sourceTree = "<group>";
@@ -175,16 +171,6 @@
 			children = (
 			);
 			path = Paints;
-			sourceTree = "<group>";
-		};
-		C92A79C120E2F62F00957871 /* Animatable */ = {
-			isa = PBXGroup;
-			children = (
-				C92A79C520E2F7F600957871 /* Types.swift */,
-				C92A79C320E2F66D00957871 /* Animatable.swift */,
-				5E2AABF220D862A7006A0306 /* Characters */,
-			);
-			path = Animatable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,9 +309,7 @@
 				9FB792A320D9B1DF000EBDD2 /* Projectile.swift in Sources */,
 				5E43111B20D33F3B009E2FB4 /* GameScene.swift in Sources */,
 				5E43111D20D33F3B009E2FB4 /* GameViewController.swift in Sources */,
-				C92A79C620E2F7F600957871 /* Types.swift in Sources */,
 				5EED177620DAF9D400E46637 /* Tower.swift in Sources */,
-				C92A79C420E2F66D00957871 /* Animatable.swift in Sources */,
 				5EED177A20DAFAF900E46637 /* Enemy.swift in Sources */,
 				5E2AABF420D862D4006A0306 /* TacoTruck.swift in Sources */,
 				5E43111520D33F3B009E2FB4 /* AppDelegate.swift in Sources */,
