@@ -128,12 +128,12 @@
 				5E43111820D33F3B009E2FB4 /* Actions.sks */,
 				5E43111A20D33F3B009E2FB4 /* GameScene.swift */,
 				5E76C1BE20D9C81000099965 /* Towers */,
+				5E2AABF220D862A7006A0306 /* Characters */,
 				5E43111C20D33F3B009E2FB4 /* GameViewController.swift */,
 				5E43111E20D33F3B009E2FB4 /* Main.storyboard */,
 				5E43112120D33F3B009E2FB4 /* Assets.xcassets */,
 				5E43112320D33F3B009E2FB4 /* LaunchScreen.storyboard */,
 				5E43112620D33F3B009E2FB4 /* Info.plist */,
-				5E2AABF220D862A7006A0306 /* Characters */,
 			);
 			path = TacoDefender;
 			sourceTree = "<group>";

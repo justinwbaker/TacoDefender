@@ -39,7 +39,6 @@ class Tower: SKSpriteNode {
     var towerColor: SKColor
     var colorBlend: CGFloat
     var turret: SKSpriteNode
-    var gameTimer = Timer()
     var shootTimer = Timer()
     var closestEnemy: Enemy
     var closestEnemyDist: CGFloat
@@ -53,7 +52,12 @@ class Tower: SKSpriteNode {
 
     init(towerType tower: towerType, CGPoint position: CGPoint) {
         let texture = SKTexture(imageNamed: "TowerBase")
+        
+
+        
+        
         type = tower
+        var textureSize: CGSize = texture.size()
         switch type{
             case.ketchup:
                 maxHealth = 5
@@ -64,6 +68,7 @@ class Tower: SKSpriteNode {
                 turret = SKSpriteNode()
                 turret.texture = SKTexture(imageNamed: "bottle_grey_00")
                 turret.color = towerColor
+                textureSize = texture.size()/6
 
             case.mustard:
                 maxHealth = 7
@@ -72,6 +77,8 @@ class Tower: SKSpriteNode {
                 towerColor = .yellow
                 colorBlend = 1
                 turret = SKSpriteNode()
+                textureSize = texture.size()/6
+
             
             case.limeJuice:
                 maxHealth = 5
@@ -80,6 +87,8 @@ class Tower: SKSpriteNode {
                 towerColor = .green
                 colorBlend = 0.25
                 turret = SKSpriteNode()
+                textureSize = texture.size()/6
+
 
             
             case.sourCream:
@@ -89,6 +98,8 @@ class Tower: SKSpriteNode {
                 towerColor = .white
                 colorBlend = 0.9
                 turret = SKSpriteNode()
+                textureSize = texture.size()/6
+
             
             case.sriracha:
                 maxHealth = 10
@@ -97,6 +108,8 @@ class Tower: SKSpriteNode {
                 towerColor = .red
                 colorBlend = 0.5
                 turret = SKSpriteNode()
+                textureSize = texture.size()/6
+
             
             case.chili: // TODO
                 maxHealth = 0
@@ -105,6 +118,8 @@ class Tower: SKSpriteNode {
                 towerColor = .brown
                 colorBlend = 0.5
                 turret = SKSpriteNode()
+                textureSize = texture.size()/6
+
             
             case.guacamole:
                 maxHealth = 2
@@ -113,6 +128,8 @@ class Tower: SKSpriteNode {
                 towerColor = .green
                 colorBlend = 0.8
                 turret = SKSpriteNode()
+                textureSize = texture.size()/6
+
             
             case.tartarSauce: // TODO
                 maxHealth = 0
@@ -121,20 +138,25 @@ class Tower: SKSpriteNode {
                 towerColor = .yellow
                 colorBlend = 0.25
                 turret = SKSpriteNode()
+                textureSize = texture.size()/6
+
         }
         health = maxHealth
-        target = CGPoint(x: 150, y: 250)
+        target = CGPoint(x: 250, y: 150)
         self.closestEnemy = Enemy()
         self.closestEnemyDist = 0
-        super.init(texture: texture, color: .white, size: (texture.size()/6))
+        super.init(texture: texture, color: .white, size: textureSize)
         
-        gameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
         shootTimer = Timer.scheduledTimer(timeInterval: firerate, target: self, selector: #selector(self.shoot), userInfo: nil, repeats: true)
 
         // invalidate stops a timer
         //shootTimer.invalidate()
         //gameTimer.invalidate()
         
+        
+        self.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: self.size.width - self.size.width / 10,
+                                                             height: self.size.height - self.size.height / 10))
+        self.physicsBody?.isDynamic = false
         self.colorBlendFactor = colorBlend
         self.position = position
         turret.zRotation = self.position.getAngle(CGPoint: target)
@@ -142,18 +164,57 @@ class Tower: SKSpriteNode {
         turret.colorBlendFactor = 1
         turret.size = (self.size) - (self.size/8)
         addChild(turret)
-    }
+        TacoTruck.towerList.append(self)
+    } // end of init
     
     @objc func update() {
         if(TacoTruck.enemyList.count != 0){
             getClosestEnemy()
-            turret.zRotation = self.position.getAngle(CGPoint: closestEnemy.position)
+            turret.zRotation = self.position.getAngle(CGPoint: target)
         } //if one+ enemy exists loops through enemies in enemyList and aims at closest
         
         if(health <= 0){
             destroy()
-            // maybe created a destroyed animation
+            // add animation
         }
+        
+        if firerate <= 0 {
+            firerate -= 1
+        }
+        else{
+            shoot()
+            switch self.type{
+                case.ketchup:
+                firerate = 2
+                
+                case.mustard:
+                firerate = 2
+
+                case.limeJuice:
+                firerate = 4
+                
+                case.sourCream:
+                firerate = 5
+                
+                case.sriracha:
+                firerate = 8
+                
+                case.chili: // TODO
+                firerate = 0
+                
+                case.guacamole:
+                firerate = 7
+                
+                case.tartarSauce: // TODO
+                firerate = 0
+
+            }
+        }
+    }
+    
+    func addTowerToArray(){
+        TacoTruck.towerList.append(self)
+
     }
     
 
@@ -168,7 +229,7 @@ class Tower: SKSpriteNode {
         
         if (self.position.getDistance(CGPoint: target)) <= range*1000 {
             let projectile = Projectile(type: type, direction: self.position.getAngle(CGPoint: target), position: self.position)
-            self.scene?.addChild(projectile)
+            self.scene!.addChild(projectile)
         }
         
         /*
@@ -181,7 +242,10 @@ class Tower: SKSpriteNode {
     }
     
     func destroy(){
+        let towerPosition: Int = TacoTruck.towerList.index(of: self)!
+        TacoTruck.towerList.remove(at: Int(towerPosition))
         removeFromParent()
+        print("Tower Destroyed")
     }
     
     func sell(){

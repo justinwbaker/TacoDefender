@@ -14,6 +14,8 @@ class TacoTruck: SKSpriteNode {
     var tacos = 5
     var foodPoints = 100
     static var enemyList: Array<Enemy> = Array()
+    static var towerList: Array<Tower> = Array()
+    var gameTimer = Timer()
 
 
 
@@ -24,11 +26,11 @@ class TacoTruck: SKSpriteNode {
     init() {
         let texture = SKTexture(imageNamed: "TacoTruck")
         let size = CGSize(width: texture.size().width/6, height: texture.size().height/6)
-
+ 
         super.init(texture: texture, color: .white, size: size)
-
+        gameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
         name = "TacoTruck"
-        zPosition = 3
+        zPosition = 8
 
     }
     
@@ -37,6 +39,17 @@ class TacoTruck: SKSpriteNode {
     }
     
     func lose(){
+        
+    }
+    
+    @objc func update(){
+        for enemy in TacoTruck.enemyList {
+            enemy.update()
+        }
+        
+        for tower in TacoTruck.towerList {
+            tower.update()
+        }
         
     }
     
