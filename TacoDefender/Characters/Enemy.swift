@@ -28,10 +28,10 @@ class Enemy: SKSpriteNode{
         let texture = SKTexture(imageNamed: "Ant")
         self.health = 10
         self.damage = 1
-        self.moveSpeed = 10
+        self.moveSpeed = 100
         
         super.init(texture: texture, color: .white, size: texture.size())
-        self.position = CGPoint(x: -150, y: 150)
+        self.position = CGPoint(x: -250, y: 600)
 
         self.direction = self.position.getAngle(CGPoint: CGPoint(x: 0, y: 0))
         zPosition = 6

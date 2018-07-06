@@ -14,15 +14,27 @@ extension CGPoint {
         let dx = point.x - self.x
         let dy = point.y - self.y
         //print(dx, " " , dy)
-        return sqrt(abs(dx*dx-dy*dy))
+        return sqrt(dx*dx+dy*dy)
     }
     
-    func getAngle(CGPoint point: CGPoint) -> CGFloat {
-        let dx = point.x - self.x
-        let dy = point.y - self.y
+   /* func getAngle(CGPoint point: CGPoint) -> CGFloat {
+        let dx = point.x - self.x // removes origin point
+        let dy = point.y - self.y // removes origin point
         let rad = atan2(dy, dx)
         //print(rad)
-        return rad - 1.5707963268
+        //return rad  - 1.5707963268*2
+        
+        return 0
+    } // hypotenuse = sqrt(x*x + y*y)
+    */
+    
+    func getAngle(CGPoint point: CGPoint) -> CGFloat {
+        let dx: CGFloat = point.x - self.x
+        let dy: CGFloat = point.y - self.y
+        let twoPi: CGFloat = 2 * CGFloat(Double.pi)
+        var radians: CGFloat = (atan2(dy, -dx) + twoPi)
+        radians = radians.truncatingRemainder(dividingBy: twoPi)
+        return radians * 360 / twoPi
     }
 }
 
